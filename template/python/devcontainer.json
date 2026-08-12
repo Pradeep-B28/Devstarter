@@ -1,0 +1,41 @@
+{
+  "name": "Python 3.12 Dev Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.pylint",
+        "ms-python.autopep8",
+        "ms-python.debugpy",
+        "kevinrose.vsc-python-indent"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true,
+        "python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+        "python.formatting.provider": "autopep8",
+        "python.testing.pytestEnabled": true,
+        "python.testing.unittestEnabled": false,
+        "python.terminal.activateEnvironment": true
+      }
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": "true",
+      "username": "vscode"
+    }
+  },
+  "postCreateCommand": "python -m pip install --upgrade pip",
+  "remoteUser": "vscode"
+}
+"extensions": [
+  "ms-python.python",
+  "my-cool-extension.author"
+]

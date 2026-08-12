@@ -1,0 +1,33 @@
+{
+  "name": "C++ (Bookworm) Dev Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-extension-pack",
+        "ms-vscode.cmake-tools",
+        "cschlosser.doxdocgen",
+        "jeff-hykin.better-cpp-syntax"
+      ],
+      "settings": {
+        "C_Cpp.default.cppStandard": "c++20",
+        "C_Cpp.default.cStandard": "c17",
+        "C_Cpp.formatting": "clangFormat",
+        "cmake.configureOnOpen": true,
+        "cmake.buildDirectory": "${workspaceFolder}/build"
+      }
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": "true",
+      "username": "vscode"
+    }
+  },
+  "postCreateCommand": "mkdir -p build",
+  "remoteUser": "vscode"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Java 21 Dev Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "vscjava.vscode-spring-initializr",
+        "vscjava.vscode-gradle",
+        "redhat.fabric8-analytics"
+      ],
+      "settings": {
+        "java.configuration.updateBuildConfiguration": "automatic",
+        "java.compile.nullAnalysis.mode": "automatic",
+        "java.debug.settings.onBuildFailureProceed": true,
+        "maven.executable.path": "/usr/bin/mvn",
+        "gradle.javaHome": "/usr/local/openjdk-21"
+      }
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": "true",
+      "username": "vscode"
+    }
+  },
+  "postCreateCommand": "java -version",
+  "remoteUser": "vscode"
+}
