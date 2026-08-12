@@ -43,7 +43,7 @@
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/devstarter.git
+git clone https://github.com/Pradeep-B28/devstarter.git
 
 # Copy the template you need into your project root
 cp -r devstarter/templates/python /path/to/your/project/.devcontainer
