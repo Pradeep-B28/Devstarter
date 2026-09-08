@@ -1,77 +1,44 @@
+<div align="center">
+
 # 🚀 devstarter — Zero-Config Devcontainer Templates
 
-> Open any project in VS Code with **one click**. No setup. No config. Just code.
+### *One-Click Pre-Configured VS Code Development Environments for Python, Node, Go, Rust & Java*
 
-[![GitHub stars](https://img.shields.io/github/stars/Pradeep-B28/devstarter?style=social)](https://github.com/Pradeep-B28/devstarter/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/Pradeep-B28/devstarter?style=social)](https://github.com/Pradeep-B28/devstarter/forks)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Dependabot](https://img.shields.io/badge/Dependabot-enabled-brightgreen)](https://github.com/dependabot)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![VS Code](https://img.shields.io/badge/VS%20Code-Devcontainers-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)](https://code.visualstudio.com/docs/remote/containers)
+[![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 ---
 
-## 📖 Table of Contents
+</div>
 
-- [🤯 The Problem](#-the-problem)
-- [✨ The Solution](#-the-solution)
-- [🎯 Supported Languages](#-supported-languages)
-- [🚀 Quick Start](#-quick-start)
-- [🧪 Test Your Template](#-test-your-template)
-- [🔄 Auto-Updates with Dependabot](#-auto-updates-with-dependabot)
-- [🛠 Customizing a Template](#-customizing-a-template)
-- [📂 Repository Structure](#-repository-structure)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
+> [!TIP]
+> Stop spending hours configuring compilers, linters, and extensions. **devstarter** provides battle-tested Devcontainer configurations for VS Code and GitHub Codespaces.
 
 ---
 
-## 🤯 The Problem
+## 📦 Supported Language Stacks
 
-Setting up a development environment is **painfully slow**:
-
-- ⏱️ **Contributors waste 2 hours** just getting dependencies installed.
-- 🐛 **"It works on my machine"** — the most hated phrase in software engineering.
-- 😫 **Students give up** before writing a single line of code.
-- 🔄 **Teams have inconsistent environments** leading to production bugs.
-
----
-
-## ✨ The Solution
-
-**`devstarter`** provides **production-ready `.devcontainer` configurations** for the 6 most popular programming languages.
-
-**What you get:**
-- ✅ **Zero minutes** to start coding (not 120).
-- ✅ **Identical environments** for every contributor.
-- ✅ **Pre-configured linting, debugging, and testing** out of the box.
-- ✅ **GitHub Codespaces ready** — code in your browser instantly.
-- ✅ **Weekly security updates** via Dependabot.
+| Language / Stack | Included Extensions & Tooling | Base Image |
+| :--- | :--- | :--- |
+| 🐍 **Python 3.11+** | Pyright, Black Formatter, Ruff, pytest, Jupyter | `mcr.microsoft.com/devcontainers/python` |
+| 🟢 **Node.js / TS** | ESLint, Prettier, Vitest, Tailwind IntelliSense | `mcr.microsoft.com/devcontainers/typescript-node` |
+| 🐹 **Go 1.21+** | Go extension, gopls, golangci-lint, delve debugger | `mcr.microsoft.com/devcontainers/go` |
+| 🦀 **Rust** | rust-analyzer, cargo-edit, CodeLLDB debugger | `mcr.microsoft.com/devcontainers/rust` |
+| ☕ **Java 17+** | Extension Pack for Java, Maven, Gradle, JUnit | `mcr.microsoft.com/devcontainers/java` |
 
 ---
 
-## 🎯 Supported Languages
+## ⚡ How to Use
 
-| Language | Version | VS Code Extensions | Testing Framework |
-|----------|---------|-------------------|-------------------|
-| 🐍 **Python** | 3.12 | Pylint, autopep8, debugpy, Pylance | `pytest` |
-| 🟢 **Node.js** | 20 | ESLint, Prettier, TypeScript, npm-intellisense | `npm test` |
-| 🐹 **Go** | 1.22 | Language Server, Delve, Staticcheck | `go test` |
-| 🦀 **Rust** | Latest | rust-analyzer, Clippy, Crates, Even Better TOML | `cargo test` |
-| ⚙️ **C++** | 20 | C++ Tools, CMake, Clang-Format, Better C++ Syntax | `gtest/ctest` |
-| ☕ **Java** | 21 | Java Pack, Maven, Gradle, Spring Initializr | `JUnit` |
+1. Copy the `.devcontainer` folder into your target repository root.
+2. Open the repository in VS Code.
+3. When prompted, click **"Reopen in Container"**.
 
 ---
 
-## 🚀 Quick Start
+<div align="center">
 
-### Option 1: Use in Your Project (Copy a Template)
+Maintained by **[Pradeep](https://github.com/Pradeep-B28)**
 
-```bash
-# Clone this repo
-git clone https://github.com/Pradeep-B28/devstarter.git
-
-# Copy the template you need into your project root
-cp -r devstarter/templates/python /path/to/your/project/.devcontainer
-
-# Open in VS Code
-code /path/to/your/project
+</div>
