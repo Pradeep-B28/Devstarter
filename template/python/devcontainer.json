@@ -32,10 +32,5 @@
       "username": "vscode"
     }
   },
-  "postCreateCommand": "python -m pip install --upgrade pip",
   "remoteUser": "vscode"
 }
-"extensions": [
-  "ms-python.python",
-  "my-cool-extension.author"
-]
